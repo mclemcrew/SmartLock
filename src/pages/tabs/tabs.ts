@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 
 import { DashPage } from '../dash/dash';
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
 import { SettingsPage } from '../settings/settings';
 import { LogPage } from '../log/log';
 

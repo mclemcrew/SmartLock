@@ -1,6 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Chart } from 'chart.js';
 
 /**
  * Generated class for the DashPage page.
@@ -21,12 +20,12 @@ export class DashPage {
     constructor(public navCtrl: NavController) {
       //You should check the state of the lock every time that you construct or enter this view.
         if(this.btnStatus==false) {
-          this.btnName = "Lock";
+          this.btnName = "Locked";
           this.btnColor = "secondary";
           this.btnStatus = true;
         }
         else {
-          this.btnName = "Unlock";
+          this.btnName = "Unlocked";
           this.btnColor = "danger";
           this.btnStatus = false;
         }
@@ -34,12 +33,12 @@ export class DashPage {
 
     changeState() {
       if(this.btnStatus==false) {
-        this.btnName = "Lock";
+        this.btnName = "Locked";
         this.btnColor = "secondary";
         this.btnStatus = true;
       }
       else {
-        this.btnName = "Unlock";
+        this.btnName = "Unlocked";
         this.btnColor = "danger";
         this.btnStatus = false;
       }
