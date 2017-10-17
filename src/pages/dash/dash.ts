@@ -31,6 +31,7 @@ export class DashPage {
         }
     }
 
+
     changeState() {
       if(this.btnStatus==false) {
         this.btnName = "Locked";
